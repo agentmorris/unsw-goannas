@@ -58,6 +58,7 @@ This happens in [unsw-goannas-prepare-yolo-training-set.py](unsw-goannas-prepare
 * Previews the train/val sets to make sure everything looks sensible
 * Converts to YOLO training format (YOLO-formatted annotations and a YOLOv5 dataset.yaml file)
 
+All the images in the YOLO training folders are symlinks back to the labelme folders.
 
 ### Train
 

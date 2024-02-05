@@ -13,7 +13,7 @@
 import os
 
 input_folder = os.path.expanduser('~/data/unsw-alting/labelme-folders')
-cct_file = os.path.expanduser('~/data/unsw-alting/labeled-images-cct.json')
+cct_file = os.path.expanduser('~/data/unsw-alting/unsw-goannas-training.json')
 
 assert os.path.isdir(input_folder)
 

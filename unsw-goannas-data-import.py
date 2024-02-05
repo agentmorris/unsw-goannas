@@ -2,7 +2,7 @@
 #
 # unsw-goannas-data-import.py
 #
-# Parse the source .csv files from the UNSW Goannas dataset into a COCO Camera Traps .json file.
+# Parse the (two) source .csv files from the UNSW Goannas dataset into a COCO Camera Traps .json file.
 #
 #########
 
@@ -25,9 +25,6 @@ classified_fn = os.path.join(metadata_folder,'MLDPImagesClassified.csv')
 timelapse_export_fn = os.path.join(metadata_folder,'TimelapseTemplateSummer2023.csv')
 
 output_coco_file = os.path.join(metadata_folder,'unsw_goannas.json')
-
-labeling_image_width = 1600
-labeling_folder_base = os.path.join(metadata_folder,'labelme-folders')
 
 flag_names = ('animal','empty','person','vehicle')
 

@@ -35,7 +35,7 @@ from detection.run_detector import DEFAULT_DETECTOR_LABEL_MAP
 metadata_folder = os.path.expanduser('~/data/unsw-alting')
 image_folder = '/datadrive/home/sftp/unsw-alting_/data'
 
-output_coco_file = os.path.join(metadata_folder,'unsw_goannas.json')
+input_coco_file = os.path.join(metadata_folder,'unsw_goannas.json')
 
 labeling_image_width = 1600
 labeling_folder_base = os.path.join(metadata_folder,'labelme-folders')
@@ -50,7 +50,7 @@ batch_folder_base = os.path.join(metadata_folder,'label_batches')
 
 #%% Load COCO data
 
-with open(output_coco_file,'r') as f:
+with open(input_coco_file,'r') as f:
     coco_data = json.load(f)
 
 
@@ -378,8 +378,8 @@ i_chunk = None
 species_batch_folder_base = os.path.join(batch_folder_base,species_name)
 chunk_folder = os.path.join(species_batch_folder_base,'chunk_{}'.format(
     str(i_chunk).zfill(3)))
-cmd = 'python labelme {} --labels animal --linewidth 8 --last_updated_file ~/labelme-last-updated.txt --resume_from_last_update'.format(
-    chunk_folder)
+cmd = 'python labelme {} --labels animal --linewidth 8 --last_updated_file ~/labelme-last-updated.txt --resume_from_last_update'.\
+    format(chunk_folder)
 print(cmd)
 clipboard.copy(cmd)
 
