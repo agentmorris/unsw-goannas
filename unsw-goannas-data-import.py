@@ -2,7 +2,8 @@
 #
 # unsw-goannas-data-import.py
 #
-# Parse the (two) source .csv files from the UNSW Goannas dataset into a COCO Camera Traps .json file.
+# Parse the (two) source .csv files from the UNSW Goannas dataset into a COCO 
+# Camera Traps .json file.
 #
 #########
 

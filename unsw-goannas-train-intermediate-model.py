@@ -7,7 +7,6 @@
 #
 ########
 
-
 #%% Constants and imports
 
 from collections import defaultdict
@@ -501,4 +500,3 @@ open_file(results.html_output_file)
 """
 yolo predict model="/home/user/models/unsw-goannas/unsw-goannas-transient-yolov8-20231114-b-1-img640-e200/unsw-goannas-transient-yolov8-20231114-b-1-img640-e200-best.pt" source="/home/user/tmp/labels/BrendanAltingMLDP2023Images#Q16#Q16__2023-02-15__14-11-54(17).JPG" imgsz=640 save=True project="/home/user/tmp/labels" name="test" augment
 """
-

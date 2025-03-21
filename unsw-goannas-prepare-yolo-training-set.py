@@ -207,5 +207,3 @@ bbe_class_list_file_val = os.path.join(val_folder,'object.data')
 shutil.copyfile(class_list_file,bbe_class_list_file_val)
 bbe_class_list_file_train = os.path.join(val_folder,'object.data')
 shutil.copyfile(class_list_file,bbe_class_list_file_train)
-
-

@@ -1,3 +1,12 @@
+########
+#
+# unsw-goannas-scrap.py
+#
+# Exploratory analyses performed around the time of the original model
+# training (2023).
+# 
+########
+
 #%% Imports and constants
 
 import os
@@ -49,7 +58,7 @@ print('Found {} files in the labelme folder that are not in the YOLO folder'.for
     len(images_not_in_yolo_folder)))
 
 
-#%% 
+#%% Look for unused labels
 
 from collections import defaultdict
 label_to_unused_count = defaultdict(int)
@@ -64,4 +73,3 @@ label_to_unused_count = sort_dictionary_by_value(label_to_unused_count,reverse=T
 
 for s in label_to_unused_count:
     print('{}: {}'.format(s,label_to_unused_count[s]))
-    

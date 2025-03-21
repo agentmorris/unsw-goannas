@@ -60,6 +60,7 @@ This happens in [unsw-goannas-prepare-yolo-training-set.py](unsw-goannas-prepare
 
 All the images in the YOLO training folders are symlinks back to the labelme folders.
 
+
 ### Train
 
 Two models were trained using this repository, one using YOLOv5 (with MDv5 as a starting point) and one using YOLOv5.
@@ -74,3 +75,10 @@ Training happens at the CLI, but [unsw-goannas-training.py](unsw-goannas-trainin
 * Runs a trained model on the validation data
 * Renders detections onto thumbnail images
 * Generates confusion matrices and HTML preview pages to present the results
+
+
+### Other files in this repo
+
+* [unsw-goannas-scrap.py](unsw-goannas-scrap.py): Exploratory analyses performed around the time of the original model training (2023).
+* [unsw-goannas-explore-data.py](unsw-goannas-explore-data.py): Exploratory analyses performed when I was rehydrating this project in 2025.
+* [unsw-alting-compare-goanna-detections.py](unsw-alting-compare-goanna-detections.py): Compare the two goanna detectors (YOLOv5 and YOLOv8), and compare both to the ground truth labels, and run on the complete dataset (including unlabeled images) to find previously-missed goannas.
